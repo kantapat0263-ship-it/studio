@@ -10,23 +10,17 @@ export function About() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
         <div className="space-y-6">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-accent sm:text-4xl md:text-5xl">
-            About Lotus Group
+            About Us
           </h2>
           <p className="text-muted-foreground md:text-lg">
-            Lotus Group Engineering, established in 2017, is a leader in providing comprehensive engineering services. We are driven by a commitment to excellence, innovation, and sustainability in every project we undertake.
+            ก่อตั้งขึ้นเมื่อวันที่ 3 มิถุนายน พ.ศ. 2539 ด้วยทุนจดทะเบียน 10 ล้านบาท เราให้บริการด้านการออกแบบ (Design), บริหารจัดการ (Management), จัดหา (Providing) และติดตั้งระบบวิศวกรรมต่างๆ (Installation) อย่างครบวงจร
           </p>
           <Separator className="bg-border/50" />
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-semibold text-foreground">Our Vision</h3>
+              <h3 className="text-xl font-semibold text-foreground">Our Team</h3>
               <p className="text-muted-foreground">
-                To be a world-class engineering firm recognized for our quality, reliability, and positive impact on society and the environment.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-foreground">Our Mission</h3>
-              <p className="text-muted-foreground">
-                To deliver superior engineering solutions through cutting-edge technology, skilled professionals, and a client-centric approach, ensuring safety and efficiency in all our operations.
+                ปัจจุบันมีทีมงานและผู้เชี่ยวชาญรวมทั้งสิ้น 110 คน ประกอบด้วยวิศวกรไฟฟ้า วิศวกรเครื่องกล โฟร์แมน ฝ่ายเขียนแบบ และฝ่ายสนับสนุนอื่นๆ เพื่อส่งมอบงานที่มีคุณภาพสูงสุด
               </p>
             </div>
           </div>

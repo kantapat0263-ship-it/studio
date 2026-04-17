@@ -16,10 +16,10 @@ export function Projects() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-accent sm:text-4xl md:text-5xl">
-            Project Showcase
+            Projects & Portfolio
           </h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
-            A glimpse into our diverse portfolio of successfully completed projects, showcasing our commitment to quality and excellence.
+            We have had the privilege of working with a diverse range of leading clients across various sectors. Here are some of our featured projects.
           </p>
         </div>
         <Carousel
@@ -37,7 +37,7 @@ export function Projects() {
               return (
                 <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-1">
-                    <Card className="overflow-hidden">
+                    <Card className="overflow-hidden group">
                       <CardContent className="relative flex aspect-video items-center justify-center p-0">
                         {image && (
                           <Image

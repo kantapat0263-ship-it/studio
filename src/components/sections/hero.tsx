@@ -1,15 +1,8 @@
 import { LotusLogo } from "@/components/lotus-logo";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 export function Hero() {
-  const contactInfo = [
-    { icon: MapPin, text: "17/12 M.9 T.Klongsee A.Klongluang Ban Khlong Ha (2), Thailand, Pathum Thani 12120" },
-    { icon: Phone, text: "02-524-1111, 095-251-1111, 095-251-2222" },
-    { icon: Mail, text: "lotus.group.engineering@gmail.com" },
-  ];
-
   return (
     <section
       id="home"
@@ -18,26 +11,13 @@ export function Hero() {
       <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_10%,transparent_100%)]"></div>
       <div className="container relative z-10 mx-auto flex flex-col items-center px-4 text-center">
         <LotusLogo priority />
-        <h1 className="mt-8 max-w-4xl font-headline text-2xl font-medium uppercase tracking-wider text-foreground/90 md:text-3xl">
-          Engineering Excellence <br className="md:hidden" />
-          for Society and Environment of the World
+        <h2 className="mt-6 text-xl font-medium text-foreground/80 md:text-2xl">
+          บริษัท โลตัส อีเลคทริคอล แมคคานิคอล เอ็นจิเนียริ่ง จำกัด
+        </h2>
+        <h1 className="mt-4 max-w-4xl font-headline text-2xl font-bold uppercase tracking-wider text-foreground/90 md:text-3xl">
+          Engineering excellence for society and environment of the world
         </h1>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-            {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                    <item.icon className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                    <p className="text-sm text-muted-foreground">{item.text}</p>
-                </div>
-            ))}
-        </div>
-
-        <div className="mt-12">
-            <p className="text-sm text-muted-foreground">
-            เลขประจำตัวผู้เสียภาษี: 0135560024443
-            </p>
-        </div>
-        
         <Button asChild size="lg" className="mt-12 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="#contact">Get a Quote</Link>
         </Button>

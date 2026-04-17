@@ -5,7 +5,7 @@ export function LotusLogo({ className, width, height, priority }: { className?: 
   return (
     <Image
         src="https://img2.pic.in.th/LOTUS-GROUP.png"
-        alt="Lotus Group Logo"
+        alt="Lotus Electrical Mechanical Engineering Co.,Ltd. Logo"
         width={width || 192}
         height={height || 144}
         className={cn("object-contain", className)}

@@ -3,32 +3,44 @@
     {
       "id": "about-image",
       "description": "A showcase of a complex electrical system installation, highlighting the company's expertise in electrical engineering.",
-      "imageUrl": "https://picsum.photos/seed/electrical-system/1200/800",
-      "imageHint": "electrical system"
+      "imageUrl": "https://picsum.photos/seed/electrical-engineering/1200/800",
+      "imageHint": "electrical engineering"
     },
     {
       "id": "project-1",
-      "description": "A photo of a commercial building's complex electrical wiring system.",
-      "imageUrl": "https://picsum.photos/seed/proj1/800/600",
-      "imageHint": "electrical wiring"
+      "description": "Seagate Technology factory project.",
+      "imageUrl": "https://picsum.photos/seed/seagate/800/600",
+      "imageHint": "factory technology"
     },
     {
       "id": "project-2",
-      "description": "Installation of an industrial HVAC system on a rooftop.",
-      "imageUrl": "https://picsum.photos/seed/proj2/800/600",
-      "imageHint": "hvac system"
+      "description": "Harrow International School building.",
+      "imageUrl": "https://picsum.photos/seed/harrow/800/600",
+      "imageHint": "school building"
     },
     {
       "id": "project-3",
-      "description": "Structural steel framework of a new construction project.",
-      "imageUrl": "https://picsum.photos/seed/proj3/800/600",
-      "imageHint": "construction site"
+      "description": "The Cove Condominium in Pattaya.",
+      "imageUrl": "https://picsum.photos/seed/condo-pattaya/800/600",
+      "imageHint": "modern condominium"
     },
     {
       "id": "project-4",
-      "description": "Plumbing and pipe fitting work in a large-scale facility.",
-      "imageUrl": "https://picsum.photos/seed/proj4/800/600",
-      "imageHint": "plumbing pipes"
+      "description": "Central Rama II shopping mall.",
+      "imageUrl": "https://picsum.photos/seed/central-mall/800/600",
+      "imageHint": "shopping mall"
+    },
+    {
+      "id": "project-5",
+      "description": "IPST - Institute for the Promotion of Teaching Science and Technology.",
+      "imageUrl": "https://picsum.photos/seed/ipst-building/800/600",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "project-6",
+      "description": "Siam Niramit theatre in Bangkok.",
+      "imageUrl": "https://picsum.photos/seed/siam-niramit/800/600",
+      "imageHint": "thai theatre"
     }
   ]
 }

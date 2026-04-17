@@ -13,7 +13,7 @@ export function Footer() {
               <LotusLogo width={160} height={120} />
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
-              Engineering Excellence for Society and Environment of the World
+              Engineering excellence for society and environment of the world
             </p>
           </div>
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6">
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
         <Separator className="my-6 bg-border/50" />
         <div className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Lotus Group Engineering. All Rights Reserved.
+          © {new Date().getFullYear()} Lotus Electrical Mechanical Engineering Co.,Ltd. All Rights Reserved.
         </div>
       </div>
     </footer>

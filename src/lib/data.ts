@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Zap, Droplets, AirVent, Landmark } from 'lucide-react';
+import { Zap, ShieldCheck, AirVent } from 'lucide-react';
 
 export type NavLink = {
   href: string;
@@ -23,23 +23,18 @@ export type Service = {
 export const services: Service[] = [
   {
     icon: Zap,
-    title: 'Electrical Systems',
-    description: 'Comprehensive electrical contracting for new construction, renovations, and maintenance, from high-voltage to data systems.',
+    title: 'Electrical & Communication',
+    description: 'High-voltage systems, BAS, fire alarms, CCTV, access control, networks, and solar cells.',
   },
   {
-    icon: Droplets,
-    title: 'Plumbing & Sanitary',
-    description: 'Expert installation and maintenance of plumbing and sanitary systems, ensuring efficient water supply and drainage solutions.',
+    icon: ShieldCheck,
+    title: 'Sanitary & Fire Protection',
+    description: 'Water systems, drainage, sprinklers, compressed air, and gas piping for complete building safety.',
   },
   {
     icon: AirVent,
-    title: 'Air Conditioning',
-    description: 'Design, installation, and servicing of HVAC systems for optimal comfort and air quality in any environment.',
-  },
-  {
-    icon: Landmark,
-    title: 'Structural Works',
-    description: 'Robust structural engineering and construction services, from foundation to finish, ensuring project integrity and durability.',
+    title: 'Air Conditioning & Ventilation',
+    description: 'Chilled water systems, split/package units, ventilation, and pressurization for optimal climate control.',
   },
 ];
 
@@ -53,32 +48,38 @@ export type Project = {
 export const projects: Project[] = [
     {
         id: 'p1',
-        title: 'Commercial Tower Electrical',
-        description: 'Full-scale electrical system installation for a 30-story commercial building.',
+        title: 'Seagate Technology',
+        description: 'Industrial factory project.',
         imagePlaceholderId: 'project-1'
     },
     {
         id: 'p2',
-        title: 'Industrial HVAC Overhaul',
-        description: 'Complete replacement and modernization of a large factory\'s HVAC system for improved efficiency.',
+        title: 'Harrow International School',
+        description: 'Educational building project.',
         imagePlaceholderId: 'project-2'
     },
     {
         id: 'p3',
-        title: 'Residential Complex Structure',
-        description: 'Managed all structural work for a multi-unit housing development from the ground up.',
+        title: 'The Cove Condominium Pattaya',
+        description: 'Hotel & Condominium project.',
         imagePlaceholderId: 'project-3'
     },
     {
         id: 'p4',
-        title: 'Hospital Plumbing System',
-        description: 'Designed and installed a complex, high-reliability plumbing system for a new medical facility.',
+        title: 'Central Rama II',
+        description: 'Shopping mall project.',
         imagePlaceholderId: 'project-4'
+    },
+    {
+        id: 'p5',
+        title: 'IPST',
+        description: 'Active government project.',
+        imagePlaceholderId: 'project-5'
+    },
+    {
+        id: 'p6',
+        title: 'Siam Niramit',
+        description: 'Theatre and cultural complex project.',
+        imagePlaceholderId: 'project-6'
     }
 ];
-
-export const affiliates = [
-    { name: 'LOTUS AAA', description: 'Specializing in advanced architectural acoustics.' },
-    { name: 'LOTUS SMART', description: 'Pioneering smart building and IoT integration.' },
-    { name: 'LOTUS ENERGY', description: 'Focused on renewable energy solutions and green construction.' },
-]

@@ -7,18 +7,18 @@ export function Services() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-accent sm:text-4xl md:text-5xl">
-            Our Core Services
+            Our Services (Scope of Work)
           </h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
-            We provide a wide range of professional engineering services to meet the needs of modern construction and infrastructure.
+            We specialize in providing turnkey contracting services for the core engineering systems within a building.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           {services.map((service) => (
-            <Card key={service.title} className="flex flex-col border-primary/20 bg-card hover:border-accent hover:bg-secondary/50 transition-all duration-300">
+            <Card key={service.title} className="flex flex-col text-center items-center border-primary/20 bg-card hover:border-accent hover:bg-secondary/50 transition-all duration-300">
               <CardHeader className="flex items-center gap-4">
-                 <div className="rounded-full bg-primary p-3">
-                    <service.icon className="h-6 w-6 text-primary-foreground" />
+                 <div className="rounded-full bg-primary p-4">
+                    <service.icon className="h-8 w-8 text-primary-foreground" />
                  </div>
               </CardHeader>
               <CardContent className="flex flex-grow flex-col">

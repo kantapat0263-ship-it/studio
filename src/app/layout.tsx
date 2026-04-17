@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lotus Group Engineering",
+  title: "LOTUS ELECTRICAL MECHANICAL ENGINEERING CO.,LTD.",
   description: "Engineering excellence for society and environment of the world.",
 };
 
