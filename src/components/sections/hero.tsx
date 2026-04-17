@@ -26,13 +26,14 @@ export function Hero() {
         <h2 className="mt-2 text-xl font-medium text-foreground/80 md:text-2xl">
           บริษัท โลตัส อีเลคทริคอล แมคคานิคอล เอ็นจิเนียริ่ง จำกัด
         </h2>
-        <h1 className="mt-4 max-w-4xl font-headline text-2xl font-bold uppercase tracking-wider text-foreground/90 md:text-3xl">
-          Engineering excellence for society and environment of the world
-        </h1>
 
         <Button asChild size="lg" className="mt-12 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="#contact">Get a Quote</Link>
         </Button>
+        
+        <h1 className="mt-8 max-w-4xl font-headline text-2xl font-bold uppercase tracking-wider text-foreground/90 md:text-3xl">
+          Engineering excellence for society and environment of the world
+        </h1>
       </div>
     </section>
   );
