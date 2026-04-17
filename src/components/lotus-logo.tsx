@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 export function LotusLogo({ className, width, height, priority }: { className?: string, width?: number, height?: number, priority?: boolean }) {
   return (
     <Image
-        src="/logo.png"
+        src="/logo.png?v=2"
         alt="Lotus Group Logo"
         width={width || 192}
         height={height || 144}
