@@ -48,14 +48,14 @@ export type Project = {
 export const projects: Project[] = [
     {
         id: 'p1',
-        title: 'Seagate Technology',
-        description: 'Industrial factory project.',
+        title: 'ARL CUSTOMER SERVICE IMPROVEMENT7 station',
+        description: 'Customer service improvement project.',
         imagePlaceholderId: 'project-1'
     },
     {
         id: 'p2',
-        title: 'Harrow International School',
-        description: 'Educational building project.',
+        title: 'คาราบาว APM ประกอบธุรกิจผลิตและจัดหาบรรจุภัณฑ์',
+        description: 'Packaging manufacturing project.',
         imagePlaceholderId: 'project-2'
     },
     {

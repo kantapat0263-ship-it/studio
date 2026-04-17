@@ -8,21 +8,21 @@
     },
     {
       "id": "project-1",
-      "description": "Seagate Technology factory project.",
-      "imageUrl": "https://picsum.photos/seed/seagate/800/600",
-      "imageHint": "factory technology"
+      "description": "ARL Customer Service Improvement project at 7 stations.",
+      "imageUrl": "https://img1.pic.in.th/images/ChatGPT-Image-17-..-2569-14_36_48.png",
+      "imageHint": "train station"
     },
     {
       "id": "project-2",
-      "description": "Harrow International School building.",
-      "imageUrl": "https://picsum.photos/seed/harrow/800/600",
-      "imageHint": "school building"
+      "description": "Carabao APM packaging manufacturing facility.",
+      "imageUrl": "https://img1.pic.in.th/images/ChatGPT-Image-17-..-2569-14_13_59.png",
+      "imageHint": "factory packaging"
     },
     {
       "id": "project-3",
       "description": "The Cove Condominium in Pattaya.",
-      "imageUrl": "https://picsum.photos/seed/condo-pattaya/800/600",
-      "imageHint": "modern condominium"
+      "imageUrl": "https://img2.pic.in.th/ChatGPT-Image-17-..-2569-14_02_31.png",
+      "imageHint": "beachfront condominium"
     },
     {
       "id": "project-4",
