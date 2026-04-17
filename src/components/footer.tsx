@@ -2,6 +2,7 @@ import Link from "next/link";
 import { navLinks } from "@/lib/data";
 import { Separator } from "@/components/ui/separator";
 import { LotusLogo } from "@/components/lotus-logo";
+import { Facebook } from "lucide-react";
 
 export function Footer() {
   return (
@@ -29,8 +30,19 @@ export function Footer() {
           </nav>
         </div>
         <Separator className="my-6 bg-border/50" />
-        <div className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Lotus Electrical Mechanical Engineering Co.,Ltd. All Rights Reserved.
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <p className="text-center text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Lotus Electrical Mechanical Engineering Co.,Ltd. All Rights Reserved.
+          </p>
+          <Link
+              href="https://www.facebook.com/profile.php?id=100027862286419"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground transition-colors hover:text-accent"
+              aria-label="Facebook Page"
+            >
+              <Facebook className="h-6 w-6" />
+            </Link>
         </div>
       </div>
     </footer>
