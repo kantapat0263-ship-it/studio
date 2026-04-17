@@ -32,7 +32,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="#home" className="flex items-center">
-            <span className="text-xl font-bold text-accent">LOTUS GROUP</span>
+            <LotusLogo width={120} height={90} />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -58,7 +58,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] bg-card p-6">
               <div className="mb-8 flex justify-between items-center">
                 <Link href="#home" onClick={() => setMobileMenuOpen(false)}>
-                    <span className="text-xl font-bold text-accent">LOTUS GROUP</span>
+                    <LotusLogo width={140} height={105} />
                 </Link>
                 <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                   <X className="h-6 w-6" />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { navLinks } from "@/lib/data";
 import { Separator } from "@/components/ui/separator";
+import { LotusLogo } from "@/components/lotus-logo";
 
 export function Footer() {
   return (
@@ -8,8 +9,8 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8 md:px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-center md:text-left">
-            <Link href="#home" className="text-2xl font-bold text-accent">
-              LOTUS GROUP ENGINEERING
+            <Link href="#home" className="flex justify-center md:justify-start">
+              <LotusLogo width={160} height={120} />
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
               Engineering Excellence for Society and Environment of the World

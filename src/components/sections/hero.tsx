@@ -17,7 +17,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_10%,transparent_100%)]"></div>
       <div className="container relative z-10 mx-auto flex flex-col items-center px-4 text-center">
-        <LotusLogo />
+        <LotusLogo priority />
         <h1 className="mt-8 max-w-4xl font-headline text-2xl font-medium uppercase tracking-wider text-foreground/90 md:text-3xl">
           Engineering Excellence <br className="md:hidden" />
           for Society and Environment of the World
