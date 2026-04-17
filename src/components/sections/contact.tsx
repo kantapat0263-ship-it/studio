@@ -1,10 +1,10 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { submitContactForm } from "@/app/actions";
+import { submitContactForm, type ContactFormState } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -31,22 +31,28 @@ function SubmitButton() {
 export function Contact() {
   const { language } = useLanguage();
   const t = translations.contact;
-  const initialState = { message: null, errors: {} };
+  const initialState: ContactFormState = {
+    message: null,
+    errors: {},
+    success: false,
+  };
   const [state, dispatch] = useFormState(submitContactForm, initialState);
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     if (state.message) {
-      if (state.errors && Object.keys(state.errors).length > 0) {
+      if (state.success) {
+        toast({
+          title: "Success",
+          description: state.message,
+        });
+        formRef.current?.reset();
+      } else {
         toast({
           title: "Error",
           description: state.message,
           variant: "destructive",
-        });
-      } else {
-        toast({
-          title: "Success",
-          description: state.message,
         });
       }
     }
@@ -58,7 +64,11 @@ export function Contact() {
       label: t.address[language],
       value: [t.addressValue[language]],
     },
-    { icon: Phone, label: t.phone[language], value: ["02-902-7983", "02-157-0894"] },
+    {
+      icon: Phone,
+      label: t.phone[language],
+      value: ["02-902-7983", "02-157-0894"],
+    },
     { icon: Printer, label: t.fax[language], value: ["02-902-7985"] },
     { icon: Mail, label: t.email[language], value: ["lotus_eme@hotmail.com"] },
   ];
@@ -122,7 +132,9 @@ export function Contact() {
           </div>
 
           <div className="space-y-4 pt-4">
-            <h3 className="font-semibold text-foreground">{t.locationMap[language]}</h3>
+            <h3 className="font-semibold text-foreground">
+              {t.locationMap[language]}
+            </h3>
             <div className="flex flex-col items-start gap-4">
               <Image
                 src="https://img2.pic.in.th/1776412099883.jpg"
@@ -143,7 +155,7 @@ export function Contact() {
             </div>
           </div>
         </div>
-        <form action={dispatch} className="space-y-4">
+        <form ref={formRef} action={dispatch} className="space-y-4">
           <Input
             name="name"
             placeholder={t.yourName[language]}
