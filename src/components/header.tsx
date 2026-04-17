@@ -27,11 +27,11 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         hasScrolled
           ? "border-b border-white/10 bg-background/80 backdrop-blur-lg"
-          : "bg-transparent"
+          : "bg-background/80"
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="#home" className="flex items-center">
+        <Link href="#home" className="flex items-center pt-2">
             <LotusLogo width={120} height={90} />
         </Link>
 
