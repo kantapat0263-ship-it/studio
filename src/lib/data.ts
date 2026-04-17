@@ -136,7 +136,7 @@ export const affiliates: Affiliate[] = [
         ]
     },
     {
-        name: 'PLANET ENGINEERING',
-        description: ['งานระบบไฟฟ้า']
+        name: 'PLANET ENGINEERING CO.,LTD.',
+        description: ['Electrical system installation']
     }
 ];
