@@ -39,7 +39,7 @@ export function Services() {
               </CardHeader>
               <CardContent className="flex flex-grow flex-col pt-0">
                 <ul className="space-y-2 text-left text-sm text-muted-foreground">
-                  {service.details.map((detail, index) => (
+                  {service.details[language].map((detail, index) => (
                     <li key={index} className="flex items-start">
                       <Check className="mr-2 mt-1 h-4 w-4 flex-shrink-0 text-primary" />
                       <span>{detail}</span>

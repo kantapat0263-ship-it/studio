@@ -18,7 +18,10 @@ export const navLinks: NavLink[] = [
 export type Service = {
   icon: LucideIcon;
   title: { en: string; th: string };
-  details: string[];
+  details: {
+    en: string[];
+    th: string[];
+  };
 };
 
 export const services: Service[] = [
@@ -28,27 +31,50 @@ export const services: Service[] = [
       en: "Electrical and Communication System",
       th: "ระบบไฟฟ้าและการสื่อสาร",
     },
-    details: [
-      "High Voltage Electrical System",
-      "Transformer",
-      "Generator",
-      "Distribution Board",
-      "Electrical & Communication",
-      "Telephone System",
-      "Sound & Paging System",
-      "Building Automation System",
-      "Fire Alarm System",
-      "Security System",
-      "Closed Circuit Television System",
-      "Master Antenna & Satellite Television System",
-      "Lightning Protection & Grounding System",
-      "Computer & Data Communication System",
-      "Access Control",
-      "Door Alarm",
-      "Guard Tour",
-      "Nurse Call",
-      "Solar Cell Power Plant",
-    ],
+    details: {
+      en: [
+        "High Voltage Electrical System",
+        "Transformer",
+        "Generator",
+        "Distribution Board",
+        "Electrical & Communication",
+        "Telephone System",
+        "Sound & Paging System",
+        "Building Automation System",
+        "Fire Alarm System",
+        "Security System",
+        "Closed Circuit Television System",
+        "Master Antenna & Satellite Television System",
+        "Lightning Protection & Grounding System",
+        "Computer & Data Communication System",
+        "Access Control",
+        "Door Alarm",
+        "Guard Tour",
+        "Nurse Call",
+        "Solar Cell Power Plant",
+      ],
+      th: [
+        "ระบบไฟฟ้าแรงสูง",
+        "หม้อแปลงไฟฟ้า",
+        "เครื่องกำเนิดไฟฟ้า",
+        "ตู้จ่ายไฟ",
+        "ระบบไฟฟ้าและการสื่อสาร",
+        "ระบบโทรศัพท์",
+        "ระบบเสียงและประกาศ",
+        "ระบบควบคุมอาคารอัตโนมัติ",
+        "ระบบแจ้งเหตุเพลิงไหม้",
+        "ระบบรักษาความปลอดภัย",
+        "ระบบโทรทัศน์วงจรปิด",
+        "ระบบเสาอากาศทีวีรวมและจานดาวเทียม",
+        "ระบบป้องกันฟ้าผ่าและสายดิน",
+        "ระบบคอมพิวเตอร์และการสื่อสารข้อมูล",
+        "ระบบควบคุมการเข้า-ออก",
+        "ระบบสัญญาณเตือนภัยประตู",
+        "ระบบการ์ดทัวร์",
+        "ระบบเรียกพยาบาล",
+        "โรงไฟฟ้าพลังงานแสงอาทิตย์",
+      ],
+    },
   },
   {
     icon: ShieldCheck,
@@ -56,13 +82,22 @@ export const services: Service[] = [
       en: "Sanitary and Fire Protection System",
       th: "ระบบสุขาภิบาลและป้องกันอัคคีภัย",
     },
-    details: [
-      "Cold Water System",
-      "Soil Waste & Vent. Piping System",
-      "Fire Protection System",
-      "Sprinkler System",
-      "Air Compressor & Gas Piping System",
-    ],
+    details: {
+      en: [
+        "Cold Water System",
+        "Soil Waste & Vent. Piping System",
+        "Fire Protection System",
+        "Sprinkler System",
+        "Air Compressor & Gas Piping System",
+      ],
+      th: [
+        "ระบบน้ำดี",
+        "ระบบท่อน้ำโสโครกและท่อระบายอากาศ",
+        "ระบบป้องกันอัคคีภัย",
+        "ระบบสปริงเกอร์",
+        "ระบบอัดอากาศและท่อส่งก๊าซ",
+      ],
+    },
   },
   {
     icon: AirVent,
@@ -70,13 +105,22 @@ export const services: Service[] = [
       en: "Air Conditioning and Ventilation System",
       th: "ระบบปรับอากาศและระบายอากาศ",
     },
-    details: [
-      "Chilled Water System",
-      "Split Type & Package Air Conditioning System",
-      "Ventilation System",
-      "Pressurization System",
-      "Ducting System",
-    ],
+    details: {
+      en: [
+        "Chilled Water System",
+        "Split Type & Package Air Conditioning System",
+        "Ventilation System",
+        "Pressurization System",
+        "Ducting System",
+      ],
+      th: [
+        "ระบบน้ำเย็น",
+        "ระบบปรับอากาศแบบแยกส่วนและแบบแพ็คเกจ",
+        "ระบบระบายอากาศ",
+        "ระบบอัดอากาศ",
+        "ระบบท่อลม",
+      ],
+    },
   },
 ];
 
