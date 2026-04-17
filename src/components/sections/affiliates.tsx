@@ -1,4 +1,5 @@
 import { affiliates } from "@/lib/data";
+import { Check } from "lucide-react";
 
 export function Affiliates() {
   return (
@@ -12,18 +13,23 @@ export function Affiliates() {
             We are proud to be part of a larger network of specialized companies, working together to deliver integrated solutions.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
           {affiliates.map((company) => (
             <div
               key={company.name}
-              className="group flex flex-col items-center justify-center rounded-lg border-2 border-primary/20 bg-card p-8 text-center transition-all duration-300 hover:border-accent"
+              className="group flex flex-col items-center justify-start rounded-lg border-2 border-primary/20 bg-card p-8 text-center transition-all duration-300 hover:border-accent"
             >
               <h3 className="font-headline text-2xl font-bold tracking-widest text-foreground transition-colors group-hover:text-accent">
                 {company.name}
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {company.description}
-              </p>
+              <ul className="mt-4 space-y-2 text-left text-sm text-muted-foreground">
+                {company.description.map((detail, index) => (
+                  <li key={index} className="flex items-start">
+                    <Check className="mr-2 mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+                    <span>{detail}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

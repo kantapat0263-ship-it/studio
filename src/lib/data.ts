@@ -119,16 +119,24 @@ export const projects: Project[] = [
 
 export type Affiliate = {
   name: string;
-  description: string;
+  description: string[];
 };
 
 export const affiliates: Affiliate[] = [
     {
         name: 'P-ADVANCED CONSTRUCTION CO.,LTD.',
-        description: 'งานโครงสร้างอาคาร'
+        description: [
+            'Building Work',
+            'High Rise Building Work',
+            'Main Factory Work',
+            'Building Renovation Work',
+            'Civil work',
+            'Earth Work and Site Installation work',
+            'Demolition Work',
+        ]
     },
     {
         name: 'PLANET ENGINEERING',
-        description: 'งานระบบไฟฟ้า'
+        description: ['งานระบบไฟฟ้า']
     }
 ];
