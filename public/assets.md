@@ -1,0 +1,1 @@
+This folder is for static assets like images, which can be referenced from the root of the site (e.g., /logo.png).
