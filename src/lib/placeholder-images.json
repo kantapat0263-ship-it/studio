@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "about-image",
-      "description": "A showcase of a complex electrical system installation, highlighting the company's expertise in electrical engineering.",
-      "imageUrl": "https://picsum.photos/seed/electrical-engineering/1200/800",
-      "imageHint": "electrical engineering"
+      "description": "A modern office building, representing the company's headquarters.",
+      "imageUrl": "https://picsum.photos/seed/office-vibe/1200/800",
+      "imageHint": "office building"
     },
     {
       "id": "project-1",
