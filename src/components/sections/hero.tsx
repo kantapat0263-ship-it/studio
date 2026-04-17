@@ -20,7 +20,10 @@ export function Hero() {
       <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_10%,transparent_100%)]"></div>
       <div className="container relative z-10 mx-auto flex flex-col items-center px-4 text-center">
         <LotusLogo priority />
-        <h2 className="mt-6 text-xl font-medium text-foreground/80 md:text-2xl">
+        <h2 className="mt-6 text-xl font-medium uppercase text-foreground/80 md:text-2xl">
+          LOTUS ELECTRICAL MECHANICAL ENGINEERING CO.,LTD.
+        </h2>
+        <h2 className="mt-2 text-xl font-medium text-foreground/80 md:text-2xl">
           บริษัท โลตัส อีเลคทริคอล แมคคานิคอล เอ็นจิเนียริ่ง จำกัด
         </h2>
         <h1 className="mt-4 max-w-4xl font-headline text-2xl font-bold uppercase tracking-wider text-foreground/90 md:text-3xl">
