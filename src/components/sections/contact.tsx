@@ -41,9 +41,18 @@ export function Contact() {
   }, [state, toast]);
   
   const contactDetails = [
-    { icon: MapPin, label: "Address", value: "17/12 M.9 T.Klongsee A.Klongluang Ban Khlong Ha (2), Thailand, Pathum Thani 12120" },
-    { icon: Phone, label: "Phone", value: "02-524-1111, 095-251-1111, 095-251-2222" },
-    { icon: Mail, label: "Email", value: "lotus.group.engineering@gmail.com" },
+    { icon: MapPin, label: "Address", value: ["17/12 M.9 T.Klongsee A.Klongluang Ban Khlong Ha (2), Thailand, Pathum Thani 12120"] },
+    { icon: Phone, label: "Phone", value: [
+      "02-524-1111, 095-251-1111, 095-251-2222",
+      "086-395-5213   ***** ติดต่อแผนกจัดซื้องานระบบบริษัทโลตัสฯ",
+      "085-505-3284   ***** ติดต่อแผนกบุคคล",
+      "090-981-0464   ***** ติดต่อแผนกการตลาด",
+      "086-345-5179   ***** ติดต่อแผนกบัญชีและการเงินบริษัทโลตัสฯ",
+      "091-887-5147   ***** ติดต่อแผนกประมาณราคางานระบบประกอบอาคาร",
+      "091-716-6930   ***** ติดต่อแผนกจัดซื้องานก่อสร้างบริษัท พี-แอดวานซ์",
+      "097-083-7557   ***** ติดต่อแผนกบัญชีและการเงินบริษัท พี-แอดวานซ์",
+    ] },
+    { icon: Mail, label: "Email", value: ["lotus.group.engineering@gmail.com"] },
   ];
 
   return (
@@ -62,7 +71,9 @@ export function Contact() {
                     <detail.icon className="h-6 w-6 text-primary" />
                     <div>
                         <h3 className="font-semibold text-foreground">{detail.label}</h3>
-                        <p className="text-muted-foreground">{detail.value}</p>
+                        <div className="text-muted-foreground space-y-1">
+                          {detail.value.map((line, index) => <p key={index}>{line.replace(/\s*\*\*\*\*\*\s*/, ' - ')}</p>)}
+                        </div>
                     </div>
                 </div>
             ))}
