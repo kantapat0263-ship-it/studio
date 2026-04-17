@@ -130,9 +130,5 @@ export const affiliates: Affiliate[] = [
     {
         name: 'PLANET ENGINEERING',
         description: 'งานระบบไฟฟ้า'
-    },
-    {
-        name: 'LOTUS-SOLUTIONS CO.,LTD.',
-        description: 'Focusing on renewable energy solutions, particularly solar power systems.'
     }
 ];
