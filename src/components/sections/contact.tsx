@@ -3,6 +3,7 @@
 import { useFormState, useFormStatus } from "react-dom";
 import { useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { submitContactForm } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
@@ -99,13 +100,20 @@ export function Contact() {
           
           <div className="space-y-4 pt-4">
             <h3 className="font-semibold text-foreground">Our Location Map</h3>
-            <Image
-                src="https://img2.pic.in.th/1776412099883.jpg"
-                alt="Company Location QR Code"
-                width={192}
-                height={192}
-                className="rounded-md"
-            />
+            <div className="flex flex-col items-start gap-4">
+                <Image
+                    src="https://img2.pic.in.th/1776412099883.jpg"
+                    alt="Company Location QR Code"
+                    width={192}
+                    height={192}
+                    className="rounded-md"
+                />
+                <Button asChild variant="outline">
+                    <Link href="https://maps.app.goo.gl/WLQtB7eBRMTWpqBEA" target="_blank" rel="noopener noreferrer">
+                        Click to view on Google Maps
+                    </Link>
+                </Button>
+            </div>
           </div>
         </div>
         <form action={dispatch} className="space-y-4">
