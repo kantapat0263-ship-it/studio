@@ -41,7 +41,7 @@ export function Contact() {
   }, [state, toast]);
   
   const contactDetails = [
-    { icon: MapPin, label: "Address", value: "34/26 หมู่ 2, ต.คลองสาม, อ.คลองหลวง, จ.ปทุมธานี 12120" },
+    { icon: MapPin, label: "Address", value: "17/12 M.9 T.Klongsee A.Klongluang Ban Khlong Ha (2), Thailand, Pathum Thani 12120" },
     { icon: Phone, label: "Phone", value: "02-524-1111, 095-251-1111, 095-251-2222" },
     { icon: Mail, label: "Email", value: "lotus.group.engineering@gmail.com" },
   ];

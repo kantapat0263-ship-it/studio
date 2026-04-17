@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Hero() {
   const contactInfo = [
-    { icon: MapPin, text: "34/26 หมู่ 2 ต.คลองสาม, อ.คลองหลวง, จ.ปทุมธานี 12120" },
+    { icon: MapPin, text: "17/12 M.9 T.Klongsee A.Klongluang Ban Khlong Ha (2), Thailand, Pathum Thani 12120" },
     { icon: Phone, text: "02-524-1111, 095-251-1111, 095-251-2222" },
     { icon: Mail, text: "lotus.group.engineering@gmail.com" },
   ];
