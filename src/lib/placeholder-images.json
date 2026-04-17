@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "about-image",
-      "description": "An image showing engineering blueprints and tools, representing the company's technical expertise.",
-      "imageUrl": "https://picsum.photos/seed/about-eng/1200/800",
-      "imageHint": "engineering blueprint"
+      "description": "A showcase of a complex electrical system installation, highlighting the company's expertise in electrical engineering.",
+      "imageUrl": "https://picsum.photos/seed/electrical-system/1200/800",
+      "imageHint": "electrical system"
     },
     {
       "id": "project-1",
