@@ -78,8 +78,8 @@ export const projects: Project[] = [
     },
     {
         id: 'p6',
-        title: 'Siam Niramit',
-        description: 'Theatre and cultural complex project.',
+        title: 'Panyapiwat Institute of Management',
+        description: 'Educational building project.',
         imagePlaceholderId: 'project-6'
     }
 ];
