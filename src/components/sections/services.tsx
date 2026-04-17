@@ -1,5 +1,6 @@
 import { services } from "@/lib/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Check } from "lucide-react";
 
 export function Services() {
   return (
@@ -13,19 +14,26 @@ export function Services() {
             We specialize in providing turnkey contracting services for the core engineering systems within a building.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <Card key={service.title} className="flex flex-col text-center items-center border-primary/20 bg-card hover:border-accent hover:bg-secondary/50 transition-all duration-300">
-              <CardHeader className="flex items-center gap-4">
-                 <div className="rounded-full bg-primary p-4">
-                    <service.icon className="h-8 w-8 text-primary-foreground" />
-                 </div>
+            <Card key={service.title} className="flex flex-col border-primary/20 bg-card transition-all duration-300 hover:border-accent hover:bg-secondary/50">
+              <CardHeader>
+                <div className="flex items-center gap-4">
+                  <div className="rounded-full bg-primary p-3">
+                    <service.icon className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <CardTitle className="text-lg font-semibold text-foreground">{service.title}</CardTitle>
+                </div>
               </CardHeader>
-              <CardContent className="flex flex-grow flex-col">
-                <CardTitle className="mb-2 text-xl font-semibold text-foreground">{service.title}</CardTitle>
-                <p className="text-muted-foreground">
-                  {service.description}
-                </p>
+              <CardContent className="flex flex-grow flex-col pt-0">
+                <ul className="space-y-2 text-left text-sm text-muted-foreground">
+                  {service.details.map((detail, index) => (
+                    <li key={index} className="flex items-start">
+                      <Check className="mr-2 mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           ))}

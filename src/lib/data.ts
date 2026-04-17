@@ -18,24 +18,56 @@ export const navLinks: NavLink[] = [
 export type Service = {
   icon: LucideIcon;
   title: string;
-  description: string;
+  details: string[];
 };
 
 export const services: Service[] = [
   {
     icon: Zap,
-    title: 'Electrical & Communication',
-    description: 'High-voltage systems, BAS, fire alarms, CCTV, access control, networks, and solar cells.',
+    title: 'Electrical and Communication System',
+    details: [
+        'High Voltage Electrical System',
+        'Transformer',
+        'Generator',
+        'Distribution Board',
+        'Electrical & Communication',
+        'Telephone System',
+        'Sound & Paging System',
+        'Building Automation System',
+        'Fire Alarm System',
+        'Security System',
+        'Closed Circuit Television System',
+        'Master Antenna & Satellite Television System',
+        'Lightning Protection & Grounding System',
+        'Computer & Data Communication System',
+        'Access Control',
+        'Door Alarm',
+        'Guard Tour',
+        'Nurse Call',
+        'Solar Cell Power Plant',
+    ],
   },
   {
     icon: ShieldCheck,
-    title: 'Sanitary & Fire Protection',
-    description: 'Water systems, drainage, sprinklers, compressed air, and gas piping for complete building safety.',
+    title: 'Sanitary and Fire Protection System',
+    details: [
+        'Cold Water System',
+        'Soil Waste & Vent. Piping System',
+        'Fire Protection System',
+        'Sprinkler System',
+        'Air Compressor & Gas Piping System',
+    ],
   },
   {
     icon: AirVent,
-    title: 'Air Conditioning & Ventilation',
-    description: 'Chilled water systems, split/package units, ventilation, and pressurization for optimal climate control.',
+    title: 'Air Conditioning and Ventilation System',
+    details: [
+        'Chilled Water System',
+        'Split Type & Package Air Conditioning System',
+        'Ventilation System',
+        'Pressurization System',
+        'Ducting System',
+    ],
   },
 ];
 
