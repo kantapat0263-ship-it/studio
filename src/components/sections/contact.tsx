@@ -56,9 +56,7 @@ export function Contact() {
     {
       icon: MapPin,
       label: t.address[language],
-      value: [
-        "17/12 หมู่ 9 ถนนเลียบคลองสี่ ตำบลคลองสี่ อำเภอคลองหลวง จังหวัดปทุมธานี 12120",
-      ],
+      value: [t.addressValue[language]],
     },
     { icon: Phone, label: t.phone[language], value: ["02-902-7983", "02-157-0894"] },
     { icon: Printer, label: t.fax[language], value: ["02-902-7985"] },

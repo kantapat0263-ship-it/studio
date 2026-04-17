@@ -72,6 +72,10 @@ export const translations = {
       th: "มีโครงการในใจหรือต้องการใบเสนอราคา? เราพร้อมให้ความช่วยเหลือ ติดต่อเราผ่านช่องทางด้านล่างหรือใช้แบบฟอร์มติดต่อ",
     },
     address: { en: "Address", th: "ที่อยู่" },
+    addressValue: {
+      en: "17/12 Moo 9, Liab Klong Si Road, Klong Si, Klong Luang, Pathum Thani 12120",
+      th: "17/12 หมู่ 9 ถนนเลียบคลองสี่ ตำบลคลองสี่ อำเภอคลองหลวง จังหวัดปทุมธานี 12120",
+    },
     phone: { en: "Phone", th: "โทรศัพท์" },
     fax: { en: "Fax", th: "แฟกซ์" },
     email: { en: "Email", th: "อีเมล" },
