@@ -51,10 +51,8 @@ export function Contact() {
 
   const departmentContacts = [
     { phone: "086-395-5213", department: "จัดซื้อ (ระบบ) - โลตัสฯ" },
-    { phone: "091-716-6930", department: "จัดซื้อ (ก่อสร้าง) - พี-แอดวานซ์" },
     { phone: "091-887-5147", department: "ประมาณราคา (ระบบ)" },
     { phone: "086-345-5179", department: "บัญชี/การเงิน - โลตัสฯ" },
-    { phone: "097-083-7557", department: "บัญชี/การเงิน - พี-แอดวานซ์" },
     { phone: "085-505-3284", department: "บุคคล" },
     { phone: "090-981-0464", department: "การตลาด" },
   ];

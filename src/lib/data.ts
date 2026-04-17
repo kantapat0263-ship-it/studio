@@ -124,15 +124,15 @@ export type Affiliate = {
 
 export const affiliates: Affiliate[] = [
     {
-        name: 'P-ADVANCE ENGINEERING CO.,LTD.',
-        description: 'Specializing in civil and architectural construction works.'
+        name: 'P-ADVANCED CONSTRUCTION CO.,LTD.',
+        description: 'งานโครงสร้างอาคาร'
+    },
+    {
+        name: 'PLANET ENGINEERING',
+        description: 'งานระบบไฟฟ้า'
     },
     {
         name: 'LOTUS-SOLUTIONS CO.,LTD.',
         description: 'Focusing on renewable energy solutions, particularly solar power systems.'
-    },
-    {
-        name: 'L-SERVE AND SUPPLY CO.,LTD.',
-        description: 'Providing comprehensive maintenance and supply services for engineering systems.'
     }
 ];
