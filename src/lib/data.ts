@@ -11,6 +11,7 @@ export const navLinks: NavLink[] = [
   { href: '#about', label: 'About Us' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
+  { href: '#affiliates', label: 'Our Group' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -81,5 +82,25 @@ export const projects: Project[] = [
         title: 'Panyapiwat Institute of Management',
         description: 'Educational building project.',
         imagePlaceholderId: 'project-6'
+    }
+];
+
+export type Affiliate = {
+  name: string;
+  description: string;
+};
+
+export const affiliates: Affiliate[] = [
+    {
+        name: 'P-ADVANCE ENGINEERING CO.,LTD.',
+        description: 'Specializing in civil and architectural construction works.'
+    },
+    {
+        name: 'LOTUS-SOLUTIONS CO.,LTD.',
+        description: 'Focusing on renewable energy solutions, particularly solar power systems.'
+    },
+    {
+        name: 'L-SERVE AND SUPPLY CO.,LTD.',
+        description: 'Providing comprehensive maintenance and supply services for engineering systems.'
     }
 ];

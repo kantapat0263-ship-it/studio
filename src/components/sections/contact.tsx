@@ -48,6 +48,16 @@ export function Contact() {
     { icon: Mail, label: "Email", value: ["lotus_eme@hotmail.com"] },
   ];
 
+  const departmentContacts = [
+    { phone: "086-395-5213", department: "จัดซื้อ (ระบบ) - โลตัสฯ" },
+    { phone: "091-716-6930", department: "จัดซื้อ (ก่อสร้าง) - พี-แอดวานซ์" },
+    { phone: "091-887-5147", department: "ประมาณราคา (ระบบ)" },
+    { phone: "086-345-5179", department: "บัญชี/การเงิน - โลตัสฯ" },
+    { phone: "097-083-7557", department: "บัญชี/การเงิน - พี-แอดวานซ์" },
+    { phone: "085-505-3284", department: "บุคคล" },
+    { phone: "090-981-0464", department: "การตลาด" },
+  ];
+
   return (
     <section id="contact" className="w-full bg-card py-16 md:py-24">
       <div className="container mx-auto grid grid-cols-1 gap-12 px-4 md:grid-cols-2 md:px-6">
@@ -71,6 +81,22 @@ export function Contact() {
                 </div>
             ))}
           </div>
+
+          <div className="space-y-4 pt-4">
+            <h3 className="font-semibold text-foreground">Department Contacts</h3>
+            <div className="space-y-3">
+              {departmentContacts.map((contact) => (
+                <div key={contact.phone} className="flex items-center gap-4 text-muted-foreground">
+                  <Phone className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <div>
+                    <span>{contact.department}: </span>
+                    <span className="font-medium text-foreground">{contact.phone}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
           <div className="space-y-4 pt-4">
             <h3 className="font-semibold text-foreground">Our Location Map</h3>
             <Image
