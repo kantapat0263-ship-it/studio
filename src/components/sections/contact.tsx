@@ -2,6 +2,7 @@
 
 import { useFormState, useFormStatus } from "react-dom";
 import { useEffect } from "react";
+import Image from "next/image";
 import { submitContactForm } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
@@ -69,6 +70,16 @@ export function Contact() {
                     </div>
                 </div>
             ))}
+          </div>
+          <div className="space-y-4 pt-4">
+            <h3 className="font-semibold text-foreground">Our Location Map</h3>
+            <Image
+                src="https://img2.pic.in.th/1776412099883.jpg"
+                alt="Company Location QR Code"
+                width={192}
+                height={192}
+                className="rounded-md"
+            />
           </div>
         </div>
         <form action={dispatch} className="space-y-4">
