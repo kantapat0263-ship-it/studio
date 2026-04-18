@@ -5,7 +5,6 @@ import { Resend } from "resend";
 
 // NOTE: You need to set your RESEND_API_KEY in your environment variables (.env.local)
 // You can get a free key from https://resend.com
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -58,6 +57,7 @@ export async function submitContactForm(
   }
 
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: "Lotus EME Inquiry <onboarding@resend.dev>",
       to: ["lotus_eme@hotmail.com"],
