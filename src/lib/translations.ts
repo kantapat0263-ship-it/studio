@@ -68,8 +68,8 @@ export const translations = {
       th: "ติดต่อเรา",
     },
     description: {
-      en: "Have a project in mind or need a quote? We're here to help. Reach out to us through any of the channels below or use the contact form.",
-      th: "มีโครงการในใจหรือต้องการใบเสนอราคา? เราพร้อมให้ความช่วยเหลือ ติดต่อเราผ่านช่องทางด้านล่างหรือใช้แบบฟอร์มติดต่อ",
+      en: "We're here to help. Reach out to us through any of the channels below.",
+      th: "เราพร้อมให้ความช่วยเหลือ ติดต่อเราผ่านช่องทางด้านล่างได้เลย",
     },
     address: { en: "Address", th: "ที่อยู่" },
     addressValue: {
@@ -107,12 +107,6 @@ export const translations = {
       en: "Click to view on Google Maps",
       th: "คลิกเพื่อดูบน Google Maps",
     },
-    yourName: { en: "Your Name", th: "ชื่อของคุณ" },
-    yourEmail: { en: "Your Email", th: "อีเมลของคุณ" },
-    subject: { en: "Subject", th: "หัวข้อ" },
-    yourMessage: { en: "Your Message", th: "ข้อความของคุณ" },
-    sendMessage: { en: "Send Message", th: "ส่งข้อความ" },
-    sending: { en: "Sending...", th: "กำลังส่ง..." },
   },
   footer: {
     slogan: {
