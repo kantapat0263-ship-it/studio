@@ -60,7 +60,7 @@ export async function submitContactForm(
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: "Lotus EME Inquiry <onboarding@resend.dev>",
-      to: ["kantapat0263@gmail.com"],
+      to: ["lotus_eme@hotmail.com"],
       subject: `New Contact Form Submission: ${subject}`,
       reply_to: email,
       html: `
