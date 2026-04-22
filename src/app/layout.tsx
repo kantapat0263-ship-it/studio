@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "LOTUS ELECTRICAL MECHANICAL ENGINEERING CO.,LTD.",
   description: "Engineering excellence for society and environment of the world.",
+  icons: {
+    icon: "https://img2.pic.in.th/LOTUS-EME.png",
+  },
 };
 
 export default function RootLayout({
