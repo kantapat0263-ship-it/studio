@@ -4,6 +4,7 @@ import { LotusLogo } from "@/components/lotus-logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { translations } from "@/lib/translations";
 
@@ -20,32 +21,45 @@ export function Hero() {
         src="https://img1.pic.in.th/images/7aa2a4d1-39a3-4e2d-b513-3e14c5314ca8.png"
         alt="Lotus EME Office Background"
         fill
-        className="object-cover"
+        className="object-cover opacity-40"
         priority
       />
-      <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
-      <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_10%,transparent_100%)]"></div>
+      {/* Layered atmosphere: dark wash, technical grid, and a breathing accent glow */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+      <div className="absolute inset-0 bg-grid [mask-image:radial-gradient(ellipse_at_center,white_5%,transparent_70%)]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/20 blur-[120px] animate-glow-pulse" />
+
       <div className="container relative z-10 mx-auto flex flex-col items-center px-4 text-center">
-        <LotusLogo priority />
-        <h2 className="mt-6 text-xl font-medium uppercase text-foreground/80 md:text-2xl">
+        <div className="animate-float">
+          <LotusLogo priority />
+        </div>
+
+        <span className="eyebrow mt-8 animate-fade-in">
           {t.companyNameEn}
-        </h2>
-        <h2 className="mt-2 text-xl font-medium text-foreground/80 md:text-2xl">
+        </span>
+
+        <h1 className="mt-6 max-w-4xl font-headline text-3xl font-bold uppercase leading-tight tracking-tight text-gradient glow-text animate-fade-up sm:text-4xl md:text-5xl lg:text-6xl">
+          {t.slogan[language]}
+        </h1>
+
+        <p className="mt-6 max-w-2xl text-base text-muted-foreground animate-fade-up md:text-lg">
           {t.companyNameTh}
-        </h2>
+        </p>
 
         <Button
           asChild
           size="lg"
-          className="mt-12 bg-accent text-accent-foreground hover:bg-accent/90"
+          className="group mt-12 rounded-full bg-accent px-8 text-accent-foreground shadow-glow transition-all hover:bg-accent/90 hover:shadow-[0_0_60px_-8px_hsl(var(--glow)/0.6)] animate-fade-up"
         >
-          <Link href="#contact">{t.getQuote[language]}</Link>
+          <Link href="#contact">
+            {t.getQuote[language]}
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
         </Button>
-
-        <h1 className="mt-8 max-w-4xl font-headline text-2xl font-bold uppercase tracking-wider text-foreground/90 md:text-3xl">
-          {t.slogan[language]}
-        </h1>
       </div>
+
+      {/* Bottom fade into the next section */}
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 }
