@@ -1,11 +1,10 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // Type errors now fail the build so broken code can't ship.
   eslint: {
+    // No ESLint config is set up in this project yet; skip it during builds
+    // rather than failing. Add eslint-config-next to enable linting here.
     ignoreDuringBuilds: true,
   },
   images: {

@@ -10,11 +10,17 @@ import { translations } from "@/lib/translations";
 
 const telHref = (value: string) => `tel:${value.replace(/[^+\d]/g, "")}`;
 
+type ContactValue = { text: string; href?: string };
+
 export function Contact() {
   const { language } = useLanguage();
   const t = translations.contact;
 
-  const contactDetails = [
+  const contactDetails: {
+    icon: typeof MapPin;
+    label: string;
+    values: ContactValue[];
+  }[] = [
     {
       icon: MapPin,
       label: t.address[language],
