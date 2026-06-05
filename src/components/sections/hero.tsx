@@ -52,7 +52,7 @@ export function Hero() {
           className="group mt-12 rounded-full bg-accent px-8 text-accent-foreground shadow-glow transition-all hover:bg-accent/90 hover:shadow-[0_0_60px_-8px_hsl(var(--glow)/0.6)] animate-fade-up"
         >
           <Link href="#contact">
-            {t.getQuote[language]}
+            {translations.contact.title[language]}
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </Button>
