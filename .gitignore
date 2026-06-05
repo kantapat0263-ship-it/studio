@@ -41,3 +41,6 @@ pnpm-debug.log*
 
 # Next.js build-info file
 .next/build-info.json
+
+# TypeScript incremental build info
+tsconfig.tsbuildinfo

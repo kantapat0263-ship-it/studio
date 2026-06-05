@@ -1,12 +1,56 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
+import { StructuredData } from "@/components/structured-data";
+import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LOTUS ELECTRICAL MECHANICAL ENGINEERING CO.,LTD.",
-  description: "Engineering excellence for society and environment of the world.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.shortName}`,
+  },
+  description: siteConfig.description,
+  applicationName: siteConfig.shortName,
+  keywords: [
+    "Lotus EME",
+    "electrical engineering",
+    "mechanical engineering",
+    "MEP contractor Thailand",
+    "fire protection system",
+    "air conditioning system",
+    "sanitary system",
+    "วิศวกรรมไฟฟ้า",
+    "วิศวกรรมเครื่องกล",
+    "ระบบประกอบอาคาร",
+  ],
+  authors: [{ name: siteConfig.name }],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "th_TH",
+    alternateLocale: "en_US",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [{ url: siteConfig.logo, alt: `${siteConfig.shortName} logo` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.logo],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   icons: {
-    icon: "https://img2.pic.in.th/LOTUS-EME.png",
+    icon: "/LOTUS-EME.ico",
   },
 };
 
@@ -26,6 +70,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
+        <StructuredData />
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -13,7 +13,7 @@ export function Footer() {
   const t = translations.footer;
 
   return (
-    <footer className="bg-card">
+    <footer className="border-t border-white/5 bg-card/40">
       <div className="container mx-auto px-4 py-8 md:px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-center md:text-left">

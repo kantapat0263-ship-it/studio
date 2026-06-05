@@ -1,6 +1,12 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from 'react';
 
 type Language = 'en' | 'th';
 
@@ -11,8 +17,28 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+const STORAGE_KEY = 'lotus-eme-language';
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('th');
+  // Start from 'th' to match the server-rendered <html lang>, then hydrate the
+  // user's stored preference on the client to avoid a hydration mismatch.
+  const [language, setLanguageState] = useState<Language>('th');
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem(STORAGE_KEY);
+    if (stored === 'en' || stored === 'th') {
+      setLanguageState(stored);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
+  const setLanguage = (next: Language) => {
+    setLanguageState(next);
+    window.localStorage.setItem(STORAGE_KEY, next);
+  };
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>

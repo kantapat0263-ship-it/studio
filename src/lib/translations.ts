@@ -5,10 +5,6 @@ export const translations = {
   hero: {
     companyNameTh: "บริษัท โลตัส อีเลคทริคอล แมคคานิคอล เอ็นจิเนียริ่ง จำกัด",
     companyNameEn: "LOTUS ELECTRICAL MECHANICAL ENGINEERING CO.,LTD.",
-    getQuote: {
-      en: "Get a Quote",
-      th: "ขอใบเสนอราคา",
-    },
     slogan: {
       en: "Engineering excellence for society and environment of the world",
       th: "ความเป็นเลิศทางวิศวกรรมเพื่อสังคมและสิ่งแวดล้อมของโลก",
